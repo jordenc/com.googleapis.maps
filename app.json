@@ -1,0 +1,19 @@
+{
+    "id": "com.googleapis.maps",
+    "name": {
+        "en": "Google Maps traveltime"
+    },
+    "version": "0.0.1",
+    "compatibility": "0.x || 1.x",
+    "author": {
+        "name": "Jorden Chamid",
+        "email": "jorden@chamid.nl"
+    }
+}
+
+
+/*
+https://maps.googleapis.com/maps/api/distancematrix/xml?origins=Amsterdam&destinations=Almere
+&mode=driving
+&language=en
+*/
