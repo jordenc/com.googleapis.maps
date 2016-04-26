@@ -16,9 +16,8 @@ Homey.manager('flow').on('action.traveltime', function( callback, args ){
 		if (!error && response.statusCode == 200) {
 			
 			var data = JSON.parse(body);
-	    	Homey.log('result = ' + JSON.stringify(data.rows));
 	    	
-	    	var output = data.rows.elements.duration.text;
+	    	var output = data.rows[0].elements[0].duration.text;
 	    	Homey.log('Say: ' + output);
 	    	Homey.manager('speech-output').say( output );
 	    	
