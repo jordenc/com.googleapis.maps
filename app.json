@@ -1,19 +1,29 @@
 {
     "id": "com.googleapis.maps",
     "name": {
-        "en": "Google Maps traveltime"
+        "en": "Google Maps traveltime",
+        "nl": "Google Maps reistijd"
     },
     "version": "0.0.1",
     "compatibility": "0.x || 1.x",
     "author": {
         "name": "Jorden Chamid",
         "email": "jorden@chamid.nl"
-    }
+    },
+    "permissions": [
+    	"homey:manager:speech-output",
+		"homey:manager:speech-input",
+		"homey:manager:geolocation"
+	],
+    "flow": {
+	    "actions": [
+	      {
+	        "id": "traveltime",
+	        "title": {
+	          "en": "Tell traveltime",
+	          "nl": "Vertel reistijd"
+	        }
+	      }
+	    ]
+	}
 }
-
-
-/*
-https://maps.googleapis.com/maps/api/distancematrix/xml?origins=Amsterdam&destinations=Almere
-&mode=driving
-&language=en
-*/
